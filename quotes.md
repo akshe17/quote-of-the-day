@@ -1,0 +1,13 @@
+# Quote of the Day
+
+Daily quotes tracked here.
+
+
+## 2026-04-19 15:31:08
+
+> The only way to do great work is to love what you do.
+
+— *Steve Jobs*
+
+---
+
