@@ -1,12 +1,11 @@
 name: Daily Quote Update
 on:
   schedule:
-    # Runs every day at 6:00 AM Philippine time
     - cron: '0 22 * * *'
-  workflow_dispatch:  # Allows manual trigger from GitHub
+  workflow_dispatch:
 
 permissions:
-  contents: write  # ← Add this! Gives permission to write/push
+  contents: write
 
 jobs:
   update-quote:
@@ -14,10 +13,12 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # ← Updated from v3
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GIT_TOKEN }}  # ← Add this
       
       - name: Set up Python
-        uses: actions/setup-python@v5  # ← Updated from v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       
@@ -29,11 +30,11 @@ jobs:
       
       - name: Configure Git
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "akshe17@users.noreply.github.com"
+          git config --local user.name "akshe17"
       
       - name: Commit and push
         run: |
           git add quotes.md
           git diff-index --quiet HEAD || git commit -m "Daily quote: $(date +'%Y-%m-%d')"
-          git push
+          git push origin main
