@@ -51,5 +51,11 @@ Daily quotes tracked here.
 
 — *Steve Jobs*
 
+## 2026-04-20 22:41:44
+
+> The only way to do great work is to love what you do.
+
+— *Steve Jobs*
+
 ---
 
