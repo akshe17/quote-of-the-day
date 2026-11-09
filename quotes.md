@@ -1287,5 +1287,11 @@ Daily quotes tracked here.
 
 — *Byron Pulsifer*
 
+## 2026-11-09 01:25:10
+
+> Fate is in your hands and no one elses
+
+— *Byron Pulsifer*
+
 ---
 
