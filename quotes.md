@@ -1305,5 +1305,11 @@ Daily quotes tracked here.
 
 — *Thomas Edison*
 
+## 2026-11-12 02:41:01
+
+> Fate is in your hands and no one elses
+
+— *Byron Pulsifer*
+
 ---
 
